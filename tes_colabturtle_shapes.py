@@ -23,14 +23,20 @@ turtle_colors = ["white", "gainsboro", "silver", "darkgray", "gray", "dimgray", 
                  "maroon", "snow", "mistyrose", "lightpink", "rosybrown", "indianred", "deeppink", "firebrick transparent",
                  "lavenderblush", "pink", "hotpink", "palevioletred", "mediumvioletred", "brown"]
 
+#Define variable to eliminate "magic numbers" & defaults
+CIRCLE_DEGREES = 360
+DEFAULT_PEN_COLOR = 'red'   #'lawngreen'
+DEFAULT_INITIAL_SPEED = 13
+DEFAULT_RADIUS = 300
+DEFAULT_DRAW_PERCENT = 100
+DEFAULT_LINE_LENGTH = 100
+
 def init_turtle(initial_speed=10, pen_color='red'):
   # _______________________________________________________________
   ''' Shorter syntax for initializing the turtle the way I want it each time '''
   myTurtle.initializeTurtle(initial_speed)
   #print(pen_color)
   myTurtle.color(pen_color)
-
-
 
 def move_my_turtle(x,y):
   # _____________________________
@@ -88,8 +94,6 @@ def draw_my_shape_radius_partial(corners, radius = 300, percent=100):
 
   myTurtle.pendown()
 # _____________________________________________________________________
-
-
 
 
 def draw_shape_dict(shape_definition):
