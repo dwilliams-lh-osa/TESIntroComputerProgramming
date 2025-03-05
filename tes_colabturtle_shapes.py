@@ -1,7 +1,4 @@
 
-import ColabTurtle.Turtle as myTurtle
-import math
-
 turtle_colors = ["white", "gainsboro", "silver", "darkgray", "gray", "dimgray", "black whitesmoke",
                  "lightgray", "violet", "orchid", "magenta", "darkviolet", "darkmagenta", "ghostwhite",
                  "thistle", "plum", "mediumorchid", "darkorchid", "blueviolet", "purple", "aliceblue",
